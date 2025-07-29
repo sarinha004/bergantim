@@ -1,249 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Consultório Odontológico - Dr.(a) Monique Bergantim </title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f5f5f5;
-      color: #222c5f;
-    }
-
-    header {
-      background-color: #1e1843;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    nav {
-      background-color: #312c75;
-      padding: 10px;
-      text-align: center;
-    }
-
-    nav a {
-      color: rgb(255, 255, 255);
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .servicos, .fotos {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-around;
-    }
-
-    .servico, .foto {
-      background-color: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      width: 250px;
-      text-align: center;
-    }
-
-    .foto img {
-      max-width: 105%;
-      border-radius: 8px;
-    }
-
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: white;
-      padding: 12px 18px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 16px;
-    }
-
-    .whatsapp:hover {
-      background-color: #1ebe5d;
-    }
-
-    footer {
-      background-color: #3b596d;
-      color: white;
-      text-align: center;
-      padding: 20px; 
-    }
-
-    @media (max-width: 600px) {
-      .servicos, .fotos {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .servico, .foto {
-        width: 105%;
-      }
-    }
-  </style>
+  <title>Clínica Sorriso & Curso de Facetas</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
   <header>
-    <h1>Consultório Odontológico</h1>
-    <p>Dr(a) Monique Bergantim  - Cuidando do seu sorriso!</p>
+    <h1>Clínica Sorriso Perfeito</h1>
+    <p>Atendimento odontológico & Curso de Facetas Dentárias</p>
   </header>
 
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#servicos">Serviços</a>
-    <a href="#fotos">Fotos</a>
-    <a href="#contato">Contato</a>
-  </nav>
-
-  <section id="sobre">
-    <h2>Sobre o atendimento</h2>
-    <p>Oferecemos um atendimento personalizado e humanizado, com foco na saúde bucal e bem-estar dos nossos pacientes. Agende sua consulta e venha conhecer nosso consultório moderno e confortável.</p>
-  </section>
-
-  <section id="servicos">
-    <h2>SERVIÇOS OFERECIDOS</h2>
-    <div class="servicos">
-      <div class="servico"> 
-        <section id="limpeza-dental" style="padding: 20px; font-family: Arial, sans-serif;">
-  <h2 style="color:#3b78a6;">Como funciona a limpeza dental?</h2>
-  <p>
-    A <strong>limpeza dental</strong>, também conhecida como <em>profilaxia</em>, é um procedimento feito no consultório odontológico
-    para remover o tártaro (placa bacteriana endurecida) e prevenir doenças na gengiva.
-  </p>
-  <p>
-    Durante a sessão, o dentista utiliza instrumentos específicos para raspar o tártaro, remover manchas, realizar uma escovação profunda
-    e aplicar flúor nos dentes.
-  </p>
-  <p>
-    É um procedimento rápido, indolor e essencial para manter a saúde bucal. O ideal é realizá-lo a cada <strong>6 meses</strong>.
-  </p>
-</section>
+  <main>
+    <section class="atendimento">
+      <h2><i class="fas fa-tooth"></i> Atendimento Odontológico</h2>
+      <p>Tratamentos modernos e personalizados para cuidar do seu sorriso com carinho e tecnologia.</p>
+      <ul>
+        <li>Facetas dentárias</li>
+        <li>Clareamento dental</li>
+        <li>Ortodontia estética</li>
+        <li>Limpeza e profilaxia</li>
+      </ul>
+      <div class="btn-container">
+        <a class="botao" href="https://wa.me/5516999999999" target="_blank"><i class="fab fa-whatsapp"></i> Agendar Atendimento</a>
       </div>
-      <div class="servico">
-        <section id="clareamento-dental" style="padding: 20px; font-family: Arial, sans-serif;">
-  <h2 style="color:#3b78a6;">Clareamento Dental</h2>
-  <p>
-    O <strong>clareamento dental</strong> é um procedimento estético que visa tornar os dentes mais brancos e bonitos.
-  </p>
-  <p>
-    Pode ser feito de duas formas: no consultório, com o uso de laser e produtos profissionais, ou em casa,
-    com moldeiras personalizadas e gel clareador, sempre com o acompanhamento do dentista.
-  </p>
-  <p>
-    O produto clareador age quebrando os pigmentos que escurecem os dentes, sem danificar o esmalte dental.
-  </p>
-  <p>
-    É um tratamento seguro, eficaz e ideal para quem deseja um <strong>sorriso mais branco e confiante</strong>.
-  </p>
-</section>
-      </div>
-      <div class="servico">
-        <section id="ortodontia" style="padding: 20px; font-family: Arial, sans-serif;">
-  <h2 style="color: #3b78a6;">Ortodontia</h2>
-  <p>
-    A <strong>ortodontia</strong> é a área da odontologia que corrige a posição dos dentes e dos ossos da face,
-    melhorando tanto a estética quanto a função da boca.
-  </p>
-  <p>
-    O tratamento é feito com aparelhos ortodônticos (fixos ou móveis), que aplicam forças controladas para mover os dentes
-    gradualmente para a posição correta.
-  </p>
-  <p>
-    A ortodontia melhora a mastigação, a fala, a respiração e, claro, o <strong>sorriso</strong> do paciente.
-  </p>
-  <p>
-    É importante fazer acompanhamento regular com o dentista durante todo o tratamento para alcançar os melhores resultados.
-  </p>
-</section>
-      </div>
-     <section id="facetas" style="padding: 20px; font-family: Arial, sans-serif;">
-  <h2 style="color: #3b78a6;">Facetas</h2>
-</p>
-  <h2>Facetas Dentárias</h2>
-  <p>As facetas são lâminas finas aplicadas sobre os dentes para melhorar sua estética, corrigindo imperfeições como cor, formato ou pequenas falhas de alinhamento.</p>
+    </section>
 
-  <h3>Tipos de facetas</h3>
-  <ul>
-    <li><strong>Facetas de resina composta:</strong> aplicadas diretamente no consultório. Rápidas, mais acessíveis, mas com menor durabilidade (3 a 5 anos).</li>
-    <li><strong>Facetas de porcelana:</strong> produzidas em laboratório. São mais duráveis (8 a 15 anos), com estética superior.</li>
-  </ul>
-
-  <h3>Indicações</h3>
-  <ul>
-    <li>Dentes manchados ou escurecidos</li>
-    <li>Dentes desgastados ou quebrados</li>
-    <li>Espaços entre os dentes (diastemas)</li>
-    <li>Correções leves de alinhamento e forma</li>
-  </ul>
-
-  <h3>Cuidados após o procedimento</h3>
-  <ul>
-    <li>Evite morder objetos duros</li>
-    <li>Mantenha boa higiene bucal</li>
-    <li>Visite regularmente seu dentista</li>
-    <li>Evite excesso de alimentos com corante (no caso das de resina)</li>
-  </ul>
-        <p>.</p>
+    <section class="curso">
+      <h2><i class="fas fa-chalkboard-teacher"></i> Curso de Facetas Dentárias</h2>
+      <p>Aprenda com especialistas. Curso completo com teoria, prática clínica e consultoria em marketing para dentistas.</p>
+      <ul>
+        <li>Preparo e cimentação de facetas</li>
+        <li>Casos clínicos reais</li>
+        <li>Acesso online + aulas presenciais</li>
+        <li>Material didático incluso</li>
+      </ul>
+      <p><strong>📅 Próxima turma:</strong> 15 de Agosto de 2025</p>
+      <div class="btn-container">
+        <a class="botao" href="https://wa.me/5516999999999" target="_blank"><i class="fab fa-whatsapp"></i> Inscreva-se Agora</a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="fotos">
-    <h2>Nosso consultório</h2>
-    <div class="fotos">
-      <div class="foto">
-        <img src="https://via.placeholder.com/300x200?text=Recepção" alt="Recepção do consultório">
-        <p>Recepção moderna e confortável</p>
-      </div>
-      <div class="foto">
-        <img src="https://via.placeholder.com/300x200?text=Sala+de+atendimento" alt="Sala de atendimento">
-        <p>Ambiente limpo e acolhedor</p>
-      </div>
-      <div class="foto">
-        <img src="https://via.placeholder.com/300x200?text=Equipamentos" alt="Equipamentos">
-        <p>Equipamentos de última geração</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>📍 Rua Dr.Paulo Tinoc Cabral,150 -Jardim São Luiz,Ribeirão Preto/SP</p>
-    <p>📞 (00) 1234-5678</p>
-    <p>📧 atendimento@seudominio.com</p>
-  </section>
-
-  <a class="whatsapp" href="https://wa.me/5599999999999" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="20">
-    Fale conosco
-  </a>
+    <section class="contato">
+      <h2><i class="fas fa-envelope"></i> Contato Rápido</h2>
+      <form>
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <textarea placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Consultório Odontológico - Todos os direitos reservados.</p>
+    <p>&copy; 2025 Clínica Sorriso Perfeito | Desenvolvido por Sarinha</p>
   </footer>
-
 </body>
 </html>
-
-
-
-
-
