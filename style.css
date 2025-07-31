@@ -1,66 +1,75 @@
-/* Reset e base */
+/* style.css */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f5faff;
-  color: #333;
+  background-color: #e8edf0;
+  color: #010101;
 }
 
-/* Cabeçalho */
 header {
-  background-color: #2d89ef;
-  color: white;
+  background-color: #569ddb;
+  padding: 20px;
   text-align: center;
-  padding: 30px 15px;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 28px;
+nav {
+  background-color: #0936bd;
+  padding: 10px;
+  text-align: center;
 }
 
-header p {
-  margin-top: 10px;
-  font-size: 16px;
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #010103;
+  font-weight: bold;
 }
 
-/* Conteúdo principal */
-main {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-section {
-  background-color: white;
-  padding: 30px;
-  margin-bottom: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 h2 {
-  color: #2d89ef;
+  margin-top: 40px;
+  text-align: center;
+  color: #121211;
+}
+
+.servicos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.servico-box {
+  background-color: #196470a7;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 2px 6px rgb(46, 89, 231);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.servico-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgb(15, 47, 230);
+}
+
+.servico-box h3 {
   margin-top: 0;
+  color: #00796b;
 }
 
-ul {
-  padding-left: 20px;
-}
-
-a {
-  color: #2d89ef;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Rodapé */
 footer {
-  background-color: #2d89ef;
-  color: white;
   text-align: center;
   padding: 15px;
+  background-color: #0c8edf5a;
+  margin-top: 40px;
 }

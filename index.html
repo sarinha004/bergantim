@@ -1,62 +1,104 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clínica Sorriso & Curso de Facetas</title>
+  <title>Clínica Bergantim </title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
-    <h1>Clínica Sorriso Perfeito</h1>
-    <p>Atendimento odontológico & Curso de Facetas Dentárias</p>
+    <h1>Clínica Bergantim</h1>
   </header>
+  
+  <nav>
+    <a href="#servicos">Serviços</a>
+    <a href="#curso">Curso</a>
+    <a href="#contato">Contato</a>
+  </nav>
 
-  <main>
-    <section class="atendimento">
-      <h2><i class="fas fa-tooth"></i> Atendimento Odontológico</h2>
-      <p>Tratamentos modernos e personalizados para cuidar do seu sorriso com carinho e tecnologia.</p>
-      <ul>
-        <li>Facetas dentárias</li>
-        <li>Clareamento dental</li>
-        <li>Ortodontia estética</li>
-        <li>Limpeza e profilaxia</li>
-      </ul>
-      <div class="btn-container">
-        <a class="botao" href="https://wa.me/5516999999999" target="_blank"><i class="fab fa-whatsapp"></i> Agendar Atendimento</a>
+  <div class="container">
+    <section id="servicos">
+      <h2>Serviços Odontológicos</h2>
+      <div class="servicos-grid">
+        <div class="servico-box">
+           <img src="assets/">
+          <h3>Limpeza</h3>
+          <p>Remoção de tártaro e placa bacteriana, deixando seus dentes mais saudáveis e brilhantes.</p>
+        </div>
+        <div class="servico-box">
+           <img src="assets/">
+          <h3>Clareamento</h3>
+          <p>Tratamento estético para dentes mais brancos e um sorriso mais confiante.</p>
+        </div>
+        <div class="servico-box">
+           <img src="assets/">
+          <h3>Ortodontia</h3>
+          <p>Correção do posicionamento dentário com aparelhos modernos e confortáveis.</p>
+        </div>
+        <div class="servico-box">
+           <img src="assets/">
+          <h3>Facetas Dentárias</h3>
+          <p>Melhoria estética através da aplicação de finas lâminas sobre os dentes.</p>
+        </div>
       </div>
     </section>
 
-    <section class="curso">
-      <h2><i class="fas fa-chalkboard-teacher"></i> Curso de Facetas Dentárias</h2>
-      <p>Aprenda com especialistas. Curso completo com teoria, prática clínica e consultoria em marketing para dentistas.</p>
-      <ul>
-        <li>Preparo e cimentação de facetas</li>
-        <li>Casos clínicos reais</li>
-        <li>Acesso online + aulas presenciais</li>
-        <li>Material didático incluso</li>
-      </ul>
-      <p><strong>📅 Próxima turma:</strong> 15 de Agosto de 2025</p>
-      <div class="btn-container">
-        <a class="botao" href="https://wa.me/5516999999999" target="_blank"><i class="fab fa-whatsapp"></i> Inscreva-se Agora</a>
+    <section id="curso">
+      <h2>Curso Profissionalizante: Facetas Dentárias</h2>
+      <div class="servicos-grid">
+        <div class="servico-box">
+          <img src="assets/">
+          <h3>Módulo 1</h3>
+          <p>Introdução às facetas dentárias: conceitos, indicações e tipos.</p>
+        </div>
+        <div class="servico-box">
+           <img src="assets/">
+          <h3>Módulo 2</h3>
+          <p>Planejamento do sorriso: análise facial e dental.</p>
+        </div>
+        <div class="servico-box">
+           <img src="assets/">
+          <h3>Módulo 3</h3>
+          <p>Técnicas de preparo dentário para aplicação de facetas.</p>
+        </div>
+        <div class="servico-box">
+           <img src="assets/">
+          <h3>Módulo 4</h3>
+          <p>Cimentação e acabamento das facetas com excelência.</p>
+        </div>
       </div>
     </section>
+  </div>
+  <section id="contato">
+      <h2>Contato</h2>
+      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/clinicasorrisonatural" target="_blank">@clinicasorrisonatural</a></p>
+      <p><strong>Email:</strong> <a href="mailto:contato@clinicasorrisonatural.com">contato@clinicasorrisonatural.com</a></p>
+      <p><strong>Endereço:</strong> R. Dr. Paulo Tinoco Cabral, 150 - Jardim Sao Luiz - SP, 14020-270, Ribeirão Preto - SP</p>
+    </section>
+  </div>
+   <div style="margin-top: 20px;">
+        <a class="whatsapp-button" href="https://wa.me/5511999999999" target="_blank">Enviar Mensagem pelo WhatsApp</a>
+      </div>
 
-    <section class="contato">
-      <h2><i class="fas fa-envelope"></i> Contato Rápido</h2>
-      <form>
-        <input type="text" placeholder="Seu nome" required>
-        <input type="email" placeholder="Seu e-mail" required>
-        <textarea placeholder="Sua mensagem" required></textarea>
+      <form class="formulario-contato" action="#" method="post">
+        <h3>Envie uma mensagem</h3>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
         <button type="submit">Enviar</button>
       </form>
     </section>
-  </main>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Clínica Sorriso Perfeito | Desenvolvido por Sarinha</p>
+  <footer>
+    <p>Bergantim Odontologia. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
